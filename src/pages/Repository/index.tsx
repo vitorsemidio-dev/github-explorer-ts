@@ -1,8 +1,8 @@
 import React from 'react';
 import { useRouteMatch, Link } from 'react-router-dom';
-import { FiChevronLeft } from 'react-icons/fi';
+import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 
-import { Header, RepositoryInfo } from './styles';
+import { Header, RepositoryInfo, Issues } from './styles';
 
 import logoImg from '../../assets/logo.svg';
 
@@ -50,6 +50,17 @@ const Repository: React.FC = () => {
           </li>
         </ul>
       </RepositoryInfo>
+
+      <Issues>
+        <Link to="repositories/{repository.full_name">
+          <div>
+            <strong>repository.full_name</strong>
+            <p>repository.description</p>
+          </div>
+
+          <FiChevronRight size={20} />
+        </Link>
+      </Issues>
     </>
   );
 };
