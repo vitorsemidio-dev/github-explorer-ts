@@ -47,8 +47,6 @@ const Repository: React.FC = () => {
 
       setRepository(repositoryResponse.data);
       setIssues(issuesResponse.data);
-      console.log(repositoryResponse.data);
-      console.log(issuesResponse.data);
     }
 
     loadData();
@@ -64,30 +62,35 @@ const Repository: React.FC = () => {
         </Link>
       </Header>
 
-      <RepositoryInfo>
-        <header>
-          <img src={repository?.owner.avatar_url} alt="Avatar" />
-          <div>
-            <strong>Repositorio/nome</strong>
-            <p>Descrição do repositório</p>
-          </div>
-        </header>
+      {repository && (
+        <RepositoryInfo>
+          <header>
+            <img
+              src={repository.owner.avatar_url}
+              alt={repository.owner.login}
+            />
+            <div>
+              <strong>{repository.full_name}</strong>
+              <p>{repository.description}</p>
+            </div>
+          </header>
 
-        <ul>
-          <li>
-            <strong>1000</strong>
-            <span>stars</span>
-          </li>
-          <li>
-            <strong>100</strong>
-            <span>Forks</span>
-          </li>
-          <li>
-            <strong>30</strong>
-            <span>Issues abertas</span>
-          </li>
-        </ul>
-      </RepositoryInfo>
+          <ul>
+            <li>
+              <strong>{repository.stargazers_count}</strong>
+              <span>stars</span>
+            </li>
+            <li>
+              <strong>{repository.forks_count}</strong>
+              <span>Forks</span>
+            </li>
+            <li>
+              <strong>{repository.open_issues_count}</strong>
+              <span>Issues abertas</span>
+            </li>
+          </ul>
+        </RepositoryInfo>
+      )}
 
       <Issues>
         <Link to="repositories/{repository.full_name">
