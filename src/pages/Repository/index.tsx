@@ -2,7 +2,7 @@ import React from 'react';
 import { useRouteMatch, Link } from 'react-router-dom';
 import { FiChevronLeft } from 'react-icons/fi';
 
-import { Header } from './styles';
+import { Header, RepositoryInfo } from './styles';
 
 import logoImg from '../../assets/logo.svg';
 
@@ -22,6 +22,34 @@ const Repository: React.FC = () => {
           Voltar
         </Link>
       </Header>
+
+      <RepositoryInfo>
+        <header>
+          <img
+            src="https://api.adorable.io/avatars/70/abott@adorable.png"
+            alt="Avatar"
+          />
+          <div>
+            <strong>Repositorio/nome</strong>
+            <p>Descrição do repositório</p>
+          </div>
+        </header>
+
+        <ul>
+          <li>
+            <strong>1000</strong>
+            <span>stars</span>
+          </li>
+          <li>
+            <strong>100</strong>
+            <span>Forks</span>
+          </li>
+          <li>
+            <strong>30</strong>
+            <span>Issues abertas</span>
+          </li>
+        </ul>
+      </RepositoryInfo>
     </>
   );
 };
