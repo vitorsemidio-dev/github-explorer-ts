@@ -1,44 +1,76 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Github Explorer
 
-## Available Scripts
+<img src=".github/logo.svg">
 
-In the project directory, you can run:
+<p align="center">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/vitorsemidio-dev/github-explorer-ts?color=%2304D361&style=for-the-badge">
 
-### `yarn start`
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/vitorsemidio-dev/github-explorer-ts?style=for-the-badge">
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+  <a href="https://github.com/vitorsemidio-dev/github-explorer-ts/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/vitorsemidio-dev/github-explorer-ts?style=for-the-badge">
+  </a>
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+   <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen?style=for-the-badge">
+</p>
 
-### `yarn test`
+## Sobre o projeto
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Aplicação desenvolvida em ReactJS e consumindo dados da API do Github para buscar usuários e repositórios.
 
-### `yarn build`
+## 🧭 Como rodar o projeto
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+# Clone este repositório
+$ git clone https://github.com/vitorsemidio-dev/github-explorer-ts
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Acesse a pasta do projeto no seu terminal/cmd
+$ cd github-explorer-ts
 
-### `yarn eject`
+# Instale as dependências
+$ yarn install
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# Execute a aplicação em modo de desenvolvimento
+$ yarn start
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# A aplicação será aberta na porta:3000 - acesse http://localhost:3000
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Imagens do Projeto
 
-## Learn More
+### Usuário
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<p align="center">
+  <img src=".github/User-Cadastro.png">
+</p>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<p align="center">
+  <img src=".github/User-Detalhe.png">
+</p>
+
+### Repositórios
+
+<p align="center">
+  <img src=".github/Repos-Cadastro.png">
+</p>
+
+<p align="center">
+  <img src=".github/Repos-Detalhe.png">
+</p>
+
+<a name="-autor"></a>
+
+## 🦸‍♂️ **Autor**
+
+<p>
+<kbd>
+ <img  src="https://avatars2.githubusercontent.com/u/52754546?s=460&u=beb81a6de4cfbea7677783e3ab2527e30582478d&v=4" width="150px;" alt=""/>
+ </kbd>
+ <br />
+ <sub><strong>🌟 Vitor Emídio 🌟</strong></sub>
+</p>
+
+[![Linkedin Badge](https://img.shields.io/badge/Vitor-Emidio-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://https://www.linkedin.com/in/vitorsemidio/)](https://www.linkedin.com/in/vitorsemidio/)
+[![Github Badge](https://img.shields.io/badge/-Github-000?style=flat-square&logo=Github&logoColor=white&link=https://github.com/vitorsemidio-dev)](https://github.com/vitorsemidio-dev)
