@@ -6,7 +6,7 @@ import api from '../../services/api';
 
 import logoImg from '../../assets/logo.svg';
 
-import { Title, Form, Repositories, Error } from './styles';
+import { HeaderNavigation, Title, Form, Repositories, Error } from './styles';
 
 interface Repository {
   full_name: string;
@@ -65,7 +65,10 @@ const Dashboard: React.FC = () => {
 
   return (
     <>
-      <img src={logoImg} alt="Logo" />
+      <HeaderNavigation>
+        <img src={logoImg} alt="Logo" />
+        <Link to="/users">Explorar usuário</Link>
+      </HeaderNavigation>
       <Title>Explore repositórios no Github</Title>
 
       <Form hasError={!!inputError} onSubmit={handleAddRepository}>
