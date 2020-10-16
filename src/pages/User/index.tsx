@@ -83,12 +83,7 @@ const Dashboard: React.FC = () => {
 
       <UserList>
         {users.map((user) => (
-          <Link
-            key={user.login}
-            to={`repositories/${user.html_url}`}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <Link key={user.login} to={`/users/${user.login}`}>
             <img src={user.avatar_url} alt={user.login} />
             <div>
               <strong>{user.name || user.login}</strong>
